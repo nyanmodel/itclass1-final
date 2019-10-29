@@ -1,0 +1,130 @@
+@font-face {
+	font-family: 'M+ Bitmap';
+	src: url(JF-Dot-MPlusH12.ttf);
+}
+
+/* 画面上部のメニュー */
+.menu{
+  float: left;
+  top:0;
+  left: 0;
+  font-family: 'M+ Bitmap', sans-serif;
+  position: fixed;
+  background-color: rgba(0,0,0,.8);
+  width: 100%;
+  box-shadow: 0px 0px  10px rgba(0,0,0,.5);
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+  width: 100%;
+}
+
+ul li{
+  float: left;
+	text-align: center;
+}
+
+ul li a{
+	display: block;
+	padding: 8px 16px;
+	text-decoration: none;
+	color: #fff;
+  width: 100px;
+}
+
+li:last-child {
+	border-bottom: none;
+}
+
+li a:hover{
+	color: #000;
+	background-color: #fff;
+	opacity: .8;
+}
+
+
+.mao {
+  color: #ff0000;
+}
+
+body {
+  font-family: 'M+ Bitmap';
+  margin: 0;
+}
+
+.bgImage{
+  z-index:0;
+  overflow: hidden;
+}
+
+.bgImage::before{
+  content: '';
+  background: url("haikei.png");
+	/* background-color: #000; */
+  background-size: cover;
+	position: fixed;
+  top: -8px;
+  left: -8px;
+  right: -8px;
+  bottom: -8px;
+  z-index: -1;
+  filter: blur(5px);
+}
+
+
+
+p{
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+	border-style: solid;
+	border-width: 3px;
+	border-color: #fff;
+}
+
+img.icon {
+  margin: 10px;
+  height: 50px;
+  display: table-cell;
+}
+
+input[type="text"]{
+  font-family: 'M+ Bitmap';
+  color: #fff;
+  background-color: #000;
+  border-radius: 50px;
+  height:50px;
+  font-size: 30px;
+  border-style: none;
+  width: 50%;
+}
+
+button{
+  font-family: 'M+ Bitmap';
+  font-size: 15px;
+  height: 50px;
+  width: 50px;
+  background-color: #fff;
+  color: #000;
+  border-style: none;
+  border-width: 3px;
+  border-radius: 50px;
+}
+
+#com{
+  color: #fff;
+  background-color: #000;
+  opacity: 0.9;
+  position: fixed;
+  bottom: 0;
+  margin: 0;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+}

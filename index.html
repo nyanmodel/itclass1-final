@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>VISION</title>
+    <script src="particles/set.js"></script>
+    <script src="particles/particles.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="top.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text|M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.png" >
+  </head>
+  <body>
+
+
+<!-- 一番最初に出てくるロック画面 -->
+      <div id="titleContainer">
+          <div id="title">
+            <span id="titletext"></span>
+            <span id="cursor"></span>
+          </div>
+      </div>
+
+<!-- ロック解除ボタン -->
+      <a onclick="vanishTop();" id="lock" class="lock">
+        <i class="fa fa-unlock" aria-hidden="true"></i>
+      </a>
+
+<!-- メニュー -->
+    <div class="menu">
+      <ul>
+        <li> <a href="index.html">HOME</a> </li>
+        <li> <a href="functions.html">FUNCTIONS</a> </li>
+        <li> <a href="gallery.html">GALLERY</a> </li>
+        <li> <a href="sns.html">SNS</a> </li>
+        <li> <a href="sources.html">Sources</a> </li>
+        <li> <a href="rpg/rpg.html"> CommandRPG</a> </li>
+      </ul>
+    </div>
+
+<!-- 背景（particles.jsというライブラリを引用） -->
+    <div id="particles-js"></div>
+    <script src="particles/particles.min.js"></script>
+    <script src="particles/set.js"></script>
+
+    <div id="header">
+      VISION
+    </div>
+<!-- メインコンテンツ -->
+    <div class="content">
+
+      <!-- セクション（可読性の向上） -->
+      <section>
+        <h1>Hello.</h1>
+
+        <!-- ボタンコンテナ（ボタンを中央寄せにするために設定） -->
+          <div class="buttonContainer">
+
+            <!-- button（script.jsのファンクションを呼び出し、文字を表示） -->
+            <button type="button" onclick="setInterval('showText();',20);">About This Page</button>
+
+          </div>
+
+          <!-- このp要素に文字が75msあたり1文字出力されます。 -->
+          <p id="p"></p>
+      </section>
+
+      <section>
+        <h1>System</h1>
+        <p>
+          このページは6つのHTMLファイル、3つのcssファイル、7つのJavaScriptファイルで構成されています。
+          <br><br>
+          <!-- img要素で画像を表示しています -->
+          <img src="ss.png" alt="screenshot" class="content_img">
+          <br>
+          一番最初のロック画面は、cssでposition:fixedを設定した縦横100%の要素です。今見えているこのページに覆いかぶさる形で読み込まれます。このページより上に出てくるように、z-indexで手前に配置しました。
+          <br>
+          <br>
+          また、鍵マークをクリックするとJavaScriptが作動するようになっています。JSでは要素を消すことはできますがフェードアウトさせることはできません。なので、ロック画面要素を囲っているdivタグにclassを割り当て、あとはcssのアニメーションで処理を行なっています。 <br>
+          <br>
+          ロック画面のタイピングしているようなあの文字もJavaScriptで記述しています。授業でやったsetIntervalとcharAtを利用しています。 <br>
+          <br>
+          背景はparticles.jsという外部のライブラリを参照しています。軽量なので扱いやすいです。
+
+        </p>
+      </section>
+
+    </div>
+
+
+
+    <!-- フッター -->
+    <footer>copyright &copy; 2019 </footer>
+
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>COMMAND RPG</title>
+    <link rel="stylesheet" href="rpg.css" type="text/css">
+    <link rel="shortcut icon" href="yusha.png" >
+
+  </head>
+  <body>
+
+    <div class="bgImage">
+    </div>
+
+    <!-- メニュー -->
+    <div class="menu">
+      <ul>
+        <li> <a href="../index.html">HOME</a> </li>
+        <li> <a href="../functions.html">FUNCTIONS</a> </li>
+        <li> <a href="../gallery.html">GALLERY</a> </li>
+        <li> <a href="../sns.html">SNS</a> </li>
+        <li> <a href="../sources.html">Sources</a> </li>
+        <li> <a href="rpg.html"> CommandRPG</a> </li>
+      </ul>
+    </div>
+
+
+    <div id="com">
+      コマンド 1:攻撃 2:攻撃呪文(消費MP2) 3:回復呪文(消費MP3) <br>
+
+        <input type="text" placeholder="コマンド(1〜3の数字)を入力" id="command">
+        <button onclick="main();">送信</button>
+
+
+    </div>
+
+    <br>
+    <br>
+    <p class="message">魔王が現れた！コマンド？</p>
+    <div id="honbun">
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <script src="rpg.js"></script>
+  </body>
+</html>

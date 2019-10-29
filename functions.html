@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>Functions.</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
+    <script type="text/javascript" src="functions.js"></script>
+    <script src="particles/set.js"></script>
+    <script src="particles/particles.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text|M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.png" >
+  </head>
+
+  <body>
+
+    <!-- メニュー -->
+    <div class="menu">
+
+      <ul>
+        <li> <a href="index.html">HOME</a> </li>
+        <li> <a href="functions.html">FUNCTIONS</a> </li>
+        <li> <a href="gallery.html">GALLERY</a> </li>
+        <li> <a href="sns.html">SNS</a> </li>
+        <li> <a href="sources.html">Sources</a> </li>
+        <li> <a href="rpg/rpg.html"> CommandRPG</a> </li>
+      </ul>
+
+    </div>
+
+    <div id="particles-js"></div>
+    <script src="particles/particles.min.js"></script>
+    <script src="particles/set.js"></script>
+
+    <div id="header">
+      FUNCTIONS
+    </div>
+
+    <div class="content">
+      <section>
+        <h1>BMI</h1>
+        <p>身長・体重からBMIを計算し、あなたの体型を判定します。</p>
+    <form name="formBMI">
+      <input type="text" name="tall" placeholder="身長をcmで入力してください。"> <br>
+      <input type="text" name="heavy" placeholder="体重をkgで入力してください。"> <br>
+      <button type="button" onclick="BMIscore();">計算</button>
+    </form>
+    <p class="result" id="bmiResult"></p>
+      </section>
+
+
+      <section>
+        <h1>Calendar</h1>
+
+        <p>西暦から和暦を計算します。令和、平成、昭和にのみ対応しています。</p>
+
+        <form name="formEra">
+          <input type="text" name="year" placeholder="西暦を入力してください"><br>
+          <button type="button" onclick="Era_calc();">計算</button>
+        </form>
+
+        <p class="result" id="yearResult"></p>
+
+      </section>
+
+      <section>
+        <h1>Leap Year</h1>
+
+        <p>西暦から、閏年かそうでないかを判定します。</p>
+
+        <form name="formLeapYear">
+          <input type="text" name="LeapYear" placeholder="西暦を入力してください"><br>
+          <button type="button" onclick="Leap_calc();">計算</button>
+        </form>
+
+        <p class="result" id="leapResult"></p>
+
+      </section>
+
+
+      <section>
+        <h1>FIZZBUZZ</h1>
+
+        <p>テキストボックスに入力した整数が３で割り切れるなら「FIZZ」を、５で割り切れるなら「BUZZ」を、両方で割り切れるなら「FIZZBUZZ」をアラート表示します。</p>
+
+          <form name="formFB">
+            <input type="text" name="FBnumber" placeholder="任意の自然数を入力してください"><br>
+            <button type="button" onclick="FIZZBUZZ();">FIZZBAZZ!</button>
+          </form>
+      </section>
+
+    </div>
+
+    <!-- フッター -->
+      <footer>copyright &copy; Yu TODATE 2019 </footer>
+
+  </body>
+</html>

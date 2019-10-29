@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>SNS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <script type="text/javascript" src="script.js"></script>
+    <script src="set.js"></script>
+    <script src="particles/particles.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text|M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.png" >
+  </head>
+
+  <body>
+<!-- メニュー -->
+    <div class="menu">
+
+      <ul>
+        <li> <a href="index.html">HOME</a> </li>
+        <li> <a href="functions.html">FUNCTIONS</a> </li>
+        <li> <a href="gallery.html">GALLERY</a> </li>
+        <li> <a href="sns.html">SNS</a> </li>
+        <li> <a href="sources.html">Sources</a> </li>
+        <li> <a href="rpg/rpg.html"> CommandRPG</a> </li>
+      </ul>
+
+    </div>
+
+    <div id="particles-js"></div>
+    <script src="particles/particles.min.js"></script>
+    <script src="particles/set.js"></script>
+
+    <div id="header">
+      Dozens of Sardines
+    </div>
+
+  <div class="content">
+    <section>
+      <p>ローカルでSNSごっこができます。データはサーバには送信されないので、炎上の心配はありません。<br>
+      更新したらデータは消えます。 </p>
+
+      <h2>Compose</h2>
+      <textarea id="compose" placeholder="今何してる？" maxlength="140"></textarea><br>
+      <button type="button" name="button" onclick="SNSpoi();">Send</button>
+    </section>
+
+    <section>
+      <h2>Timeline</h2>
+      <div id="timeline">
+
+      </div>
+    </section>
+  </div>
+  <!-- フッター -->
+    <footer>copyright &copy; Yu TODATE 2019 </footer>
+
+
+
+  </body>
+</html>
